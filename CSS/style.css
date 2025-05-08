@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+body{
+    background: rgba(100, 100, 100, 0.3);
+}
+body > header{
+    border-bottom: 1px solid gray;
+}
+body > header:hover{
+    transition: 0.5s;
+    background: rgba(100, 100, 100, 1);
+}
+body > header .container{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body > header .container nav ul{
+    display: inline-flex;
+}
+header .container nav ul li{
+    margin-left: 10px;
+    list-style: none;
+}
+header .container nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+body > .container{
+    width: 1000px;
+    margin: 50px auto;
+    border-bottom: 1px solid black;
+}
+.container section h2 {
+    margin-bottom: 20px;
+}
+.container section .articles {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+.container section .articles article{
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.container section .articles article img{
+    width: 100%;
+}
+.container section .articles article header time{
+    font-size: 15px;
+}
+.container section .articles article h3{
+    padding-top: 10px;
+}
+.container section .articles article p{
+    padding: 10px 5px;
+    font-size: 15px;
+    text-align: justify;
+}
+.container section .articles article a{
+    padding: 10px 20px;
+    display: inline-flex;
+    background: rgba(0, 255, 0, 0.7);
+    color: white;
+}
+.container section .articles article a:hover{
+    padding: 10px 20px;
+    display: inline-flex;
+    transition: 0.5s;
+    background: green;
+    color: white;
+}
