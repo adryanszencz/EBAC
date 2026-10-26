@@ -1,0 +1,42 @@
+footer {
+    background-color: @cores[principal];
+    color: @cores[texto-claro];
+    padding: 32px 0;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid fade(@cores[texto-claro], 40%);
+    transition: background-color 0.2s;
+
+    img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+// Gera uma classe de hover para cada rede usando o mapa @redes
+.cor-rede(@rede) {
+    .social-link--@{rede}:hover {
+        background-color: @redes[$@rede];
+        border-color: @redes[$@rede];
+    }
+}
+
+.cor-rede(mail);
+.cor-rede(github);
+.cor-rede(linkedin);
+.cor-rede(instagram);

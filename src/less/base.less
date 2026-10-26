@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: @fonte-padrao;
+}
+
+body {
+    background-color: @cores[fundo];
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: @largura-container;
+    width: 100%;
+    margin: 0 auto;
+
+    @media @{tablet} {
+        max-width: 80%;
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "exercicio-less",
+  "version": "1.0.0",
+  "description": "Exercício do módulo 17 - conversão do CSS para LESS",
+  "scripts": {
+    "build": "node -e \"require('fs').mkdirSync('dist/css',{recursive:true})\" && lessc src/less/main.less dist/css/main.css"
+  },
+  "devDependencies": {
+    "less": "^4.2.0"
+  }
+}
