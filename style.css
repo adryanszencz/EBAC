@@ -115,6 +115,9 @@ h1, h2, h3, .logo {
 .hero__image {
     width: 360px;
     max-width: 100%;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 16px;
 }
 
 /* Seções */
@@ -163,6 +166,12 @@ h1, h2, h3, .logo {
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 16px;
+}
+
+.card img.card__icon {
+    object-fit: contain;
+    background-color: #fff;
+    padding: 24px;
 }
 
 .card h3 {
