@@ -1,0 +1,26 @@
+@use 'variables' as v;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: v.$fonte-padrao;
+}
+
+body {
+    background-color: v.$cor-fundo;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: v.$largura-container;
+    width: 100%;
+    margin: 0 auto;
+
+    @media screen and (max-width: v.$breakpoint-tablet) {
+        max-width: 80%;
+    }
+}

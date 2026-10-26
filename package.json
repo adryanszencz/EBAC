@@ -1,0 +1,12 @@
+{
+  "name": "exercicio-sass",
+  "version": "1.0.0",
+  "description": "Exercício do módulo 15 - conversão do CSS para SASS",
+  "scripts": {
+    "build": "sass src/styles/main.scss dist/css/main.css",
+    "watch": "sass --watch src/styles/main.scss dist/css/main.css"
+  },
+  "devDependencies": {
+    "sass": "^1.80.0"
+  }
+}
