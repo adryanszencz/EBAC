@@ -1,0 +1,1 @@
+let botoesDetalhes=document.querySelectorAll(".product-button");botoesDetalhes.forEach(function(t){t.addEventListener("click",function(e){e.preventDefault();e=t.closest(".product-item").querySelector("h4").textContent;alert("Você selecionou: "+e)})});

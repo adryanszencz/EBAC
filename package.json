@@ -1,12 +1,17 @@
 {
-  "name": "exercicio-sass",
+  "name": "exercicio-gulp",
   "version": "1.0.0",
-  "description": "Exercício do módulo 15 - conversão do CSS para SASS",
+  "description": "Exercício do módulo 16 - automatização de tarefas com Gulp",
   "scripts": {
-    "build": "sass src/styles/main.scss dist/css/main.css",
-    "watch": "sass --watch src/styles/main.scss dist/css/main.css"
+    "build": "gulp",
+    "watch": "gulp watch"
   },
   "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
     "sass": "^1.80.0"
   }
 }
