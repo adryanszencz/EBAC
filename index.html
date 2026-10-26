@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SZK Maker | Impressão 3D sob medida</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__content">
+            <a href="#inicio" class="logo">SZK<span>Maker</span></a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#sobre" title="Ir para a seção sobre">Sobre</a></li>
+                    <li><a href="#pecas" title="Ir para a galeria de peças">Peças</a></li>
+                    <li><a href="#como-funciona" title="Ir para a seção como funciona">Como funciona</a></li>
+                    <li><a href="#orcamento" title="Ir para o formulário de orçamento">Orçamento</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container hero__content">
+                <div class="hero__text">
+                    <h1>Sua ideia, camada por camada.</h1>
+                    <p>Impressão 3D sob medida: peças funcionais, decoração, miniaturas e protótipos, feitas em PLA, PETG e TPU.</p>
+                    <a href="#orcamento" class="button">Pedir orçamento</a>
+                </div>
+                <img src="./imagens/impressora.svg" alt="Ilustração de uma impressora 3D imprimindo uma peça" class="hero__image">
+            </div>
+        </section>
+
+        <section id="sobre" class="section">
+            <div class="container">
+                <h2>Sobre a SZK Maker</h2>
+                <p>Somos um estúdio de impressão 3D com seis impressoras trabalhando em paralelo. Cuidamos de todo o processo: escolha do modelo, ajuste de fatiamento, impressão e acabamento da peça.</p>
+                <ul class="numbers">
+                    <li><strong>6</strong> impressoras</li>
+                    <li><strong>4</strong> cores por impressão</li>
+                    <li><strong>48h</strong> de prazo médio</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="pecas" class="section section--alt">
+            <div class="container">
+                <h2>Peças que fazemos</h2>
+                <div class="cards">
+                    <article class="card">
+                        <img src="./imagens/vaso.svg" alt="Vaso decorativo impresso em 3D">
+                        <h3>Decoração</h3>
+                        <p>Vasos, luminárias e organizadores com acabamento liso ou texturizado.</p>
+                    </article>
+                    <article class="card">
+                        <img src="./imagens/engrenagem.svg" alt="Engrenagem impressa em 3D">
+                        <h3>Peças funcionais</h3>
+                        <p>Suportes, engrenagens, encaixes e reposições sob medida em PETG resistente.</p>
+                    </article>
+                    <article class="card">
+                        <img src="./imagens/miniatura.svg" alt="Miniatura de personagem impressa em 3D">
+                        <h3>Miniaturas</h3>
+                        <p>Personagens, chaveiros e colecionáveis com detalhes finos e várias cores.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="como-funciona" class="section">
+            <div class="container">
+                <h2>Como funciona</h2>
+                <ol class="steps">
+                    <li>Você envia a ideia, uma foto ou o arquivo STL.</li>
+                    <li>Respondemos com o orçamento e o prazo.</li>
+                    <li>Imprimimos e fazemos o acabamento.</li>
+                    <li>Você retira ou recebe em casa.</li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="orcamento" class="section section--alt">
+            <div class="container">
+                <h2>Peça seu orçamento</h2>
+                <form class="form" action="#" method="post">
+                    <div class="form__field">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form__field">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form__field">
+                        <label for="tipo">Tipo de peça</label>
+                        <select id="tipo" name="tipo">
+                            <option value="decoracao">Decoração</option>
+                            <option value="funcional">Peça funcional</option>
+                            <option value="miniatura">Miniatura</option>
+                            <option value="prototipo">Protótipo</option>
+                        </select>
+                    </div>
+                    <div class="form__field">
+                        <label for="material">Material</label>
+                        <select id="material" name="material">
+                            <option value="pla">PLA</option>
+                            <option value="petg">PETG</option>
+                            <option value="tpu">TPU (flexível)</option>
+                            <option value="nao-sei">Não sei, me ajudem a escolher</option>
+                        </select>
+                    </div>
+                    <div class="form__field form__field--full">
+                        <label for="descricao">Descreva a peça</label>
+                        <textarea id="descricao" name="descricao" rows="4" placeholder="Tamanho, cor, quantidade..."></textarea>
+                    </div>
+                    <div class="form__field form__field--full">
+                        <label for="arquivo">Arquivo STL (opcional)</label>
+                        <input type="file" id="arquivo" name="arquivo" accept=".stl,.3mf">
+                    </div>
+                    <button type="submit" class="button">Enviar pedido</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>SZK Maker &copy; 2026. Projeto 1 do curso de Desenvolvimento Full Stack Python da EBAC.</p>
+        </div>
+    </footer>
+</body>
+</html>
