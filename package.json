@@ -1,11 +1,16 @@
 {
-  "name": "exercicio-less",
+  "name": "exercicio-grunt",
   "version": "1.0.0",
-  "description": "Exercício do módulo 17 - conversão do CSS para LESS",
+  "description": "Exercício do módulo 18 - automatização de tarefas com Grunt",
   "scripts": {
-    "build": "node -e \"require('fs').mkdirSync('dist/css',{recursive:true})\" && lessc src/less/main.less dist/css/main.css"
+    "build": "grunt",
+    "watch": "grunt watch"
   },
   "devDependencies": {
+    "grunt": "^1.6.1",
+    "grunt-contrib-less": "^3.0.0",
+    "grunt-contrib-uglify": "^5.2.2",
+    "grunt-contrib-watch": "^1.1.0",
     "less": "^4.2.0"
   }
 }
