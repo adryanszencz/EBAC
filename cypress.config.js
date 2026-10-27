@@ -1,0 +1,9 @@
+const { defineConfig } = require('cypress')
+
+module.exports = defineConfig({
+  e2e: {
+    baseUrl: 'https://ebac-agenda-contatos-tan.vercel.app',
+    video: false,
+    supportFile: false
+  }
+})
