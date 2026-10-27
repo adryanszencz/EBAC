@@ -1,0 +1,12 @@
+{
+  "name": "exercicio-ts",
+  "version": "1.0.0",
+  "description": "Exercício do módulo 26 - funções tipadas com TypeScript",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node dist/index.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  }
+}
