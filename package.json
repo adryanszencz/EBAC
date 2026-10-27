@@ -1,0 +1,11 @@
+{
+  "name": "boas-praticas-css",
+  "version": "1.0.0",
+  "description": "Exercício do módulo 19 - classes e estilos reescritos com a metodologia BEM em SASS",
+  "scripts": {
+    "build": "sass src/styles/main.scss dist/css/main.css --no-source-map"
+  },
+  "devDependencies": {
+    "sass": "^1.80.0"
+  }
+}
